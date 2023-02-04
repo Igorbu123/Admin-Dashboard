@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
@@ -185,24 +186,26 @@ p {
   grid-row: 2 / 4;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.1);
   margin: 0;
 }
 
 .announcementsWindow {
   padding-left: 25px;
   padding-right: 25px;
-  border: 1px solid aquamarine;
+  margin-right: 30px;
   border-radius: 6%;
-  background-color: aquamarine;
+  background-color: whitesmoke;
 }
 
 .announcement {
-  border-bottom: 1px black solid;
+  border-bottom: 1px grey solid;
 }
 
 .trendingWindow {
-  background-color: aqua;
+  background-color: whitesmoke;
+  border-radius: 6%;
+  margin-right: 30px;
 }
 
 #trendingWindowHeader {
@@ -212,4 +215,6 @@ p {
 .profileTrending {
   display: flex;
   align-items: center;
+  margin-left: 10px;
+  gap: 10px;
 }
