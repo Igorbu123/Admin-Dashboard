@@ -105,15 +105,47 @@ body {
 }
 
 .projectsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  grid-row: 2 / 4;
+  background-color: aqua;
+}
+
+#projectsHeaders {
+  padding-left: 75px;
+}
+
+.projectsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-row: 2 / 4;
+  grid-row: 2 / 10;
+  height: 100%;
   background-color: lightgray;
   gap: 25px;
-  padding: 75px;
+  padding-left: 75px;
+  padding-bottom: 75px;
+  padding-right: 75px;
 }
 
 .projectsCard {
   border: 1px black solid;
+}
+
+.projectsSideContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  height: 100%;
+}
+
+.announcementsWindow {
+  border: 1px black solid;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.announcement {
+  border-bottom: 1px black solid;
 }
