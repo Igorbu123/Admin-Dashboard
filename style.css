@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+a {
+  all: unset;
+}
+
+p {
+  margin-top: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -15,16 +23,21 @@ body {
   grid-row: 1 / -1;
   height: 100%;
   grid-template-rows: repeat(10, 1fr);
-  background-color: antiquewhite;
+  background-color: royalblue;
+  color: aliceblue;
 }
 
 .logoSidebar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-left: 20%;
   font-size: 50px;
   font-weight: bold;
+}
+
+.sidebarImg {
+  padding-right: 10px;
+  color: antiquewhite;
 }
 
 .upperSidebar {
@@ -42,24 +55,36 @@ body {
 .sidebarList {
   font-size: 25px;
   font-weight: bold;
+  text-align: left;
 }
 
 .sidebarListElement {
+  list-style: none;
+  align-items: center;
   padding-top: 25px;
+  font-size: 30px;
+}
+
+.sidebarListElement:hover {
+  cursor: pointer;
 }
 
 .upperContainer {
   grid-column: 2 / 4;
   grid-row: 1 / 1;
   display: grid;
-  background-color: beige;
+  background-color: white;
   grid-template-rows: 1fr 1fr;
 }
 
 .searchBar {
-  border-radius: 6px;
-  width: 60em;
-  height: 30px;
+  border-radius: 1rem;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  margin-left: 25px;
+  width: 40em;
+  height: 40px;
 }
 
 .searchBarRow {
@@ -95,12 +120,18 @@ body {
   margin-left: 50px;
 }
 
+.profilePic {
+  border-radius: 50%;
+}
+
 .blueBtn {
-  background-color: aqua;
+  background-color: royalblue;
+  color: aliceblue;
+  border: 0;
   margin-right: 50px;
   font-size: 25px;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 15px;
+  border-radius: 12px;
 }
 
 .projectsContainer {
@@ -108,11 +139,13 @@ body {
   flex-direction: column;
   text-align: left;
   grid-row: 2 / 4;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-#projectsHeaders {
+#projectsHeader {
   padding-left: 75px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 30px;
 }
 
 .projectsGrid {
@@ -121,7 +154,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-row: 2 / 10;
   height: 100%;
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0);
   gap: 25px;
   padding-left: 75px;
   padding-bottom: 75px;
@@ -129,7 +162,23 @@ body {
 }
 
 .projectsCard {
-  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  padding-left: 50px;
+  padding-right: 100px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  border-left: 10px solid orange;
+  text-align: left;
+  font-size: 20px;
+}
+
+.cardLinks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
 }
 
 .projectsSideContainer {
